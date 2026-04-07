@@ -1,7 +1,11 @@
 aid: alliance-holdings
-url: https://raw.githubusercontent.com/api-evangelist/alliance-holdings/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/alliance-holdings/refs/heads/main/apis.yml
 modified: '2026-03-23'
 apis: []
 common:
   - type: Website
     url: https://www.alliance-holdings.com
+description: >-
+  We help you acquire the perfect domain for your site. Affordable payment options.
+  Quick and responsive customer support available.
