@@ -18,6 +18,8 @@ description: >-
   API program.
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/alliance-holdings-domain-security.yml
   - type: Website
     url: https://www.arlp.com
   - type: InvestorRelations
