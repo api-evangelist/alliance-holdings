@@ -1,3 +1,4 @@
+name: Alliance Holdings
 aid: alliance-holdings
 deliveryModel:
   model: unknown
@@ -25,29 +26,39 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/alliance-holdings.png
 url: >-
   https://raw.githubusercontent.com/api-evangelist/alliance-holdings/refs/heads/main/apis.yml
-modified: '2026-04-19'
+created: '2026-03-24'
+modified: '2026-09-04'
 description: >-
-  Alliance Holdings GP, L.P. (AHGP) was a limited partnership formed to own
-  and control Alliance Resource Management GP, LLC, the managing general
-  partner of Alliance Resource Partners, L.P. (ARLP), the second largest coal
-  producer in the eastern United States. AHGP held a general partner interest
-  and incentive distribution rights in ARLP, along with a substantial direct
-  ownership stake in ARLP common units. In 2018, Alliance Holdings GP became
-  a wholly-owned subsidiary of Alliance Resource Partners as part of a
-  simplification transaction, with AHGP unitholders receiving ARLP common
-  units in exchange. Alliance Resource Partners (NASDAQ: ARLP) continues as a
-  diversified energy company generating income from coal production and mineral
-  royalties from coal, oil, and gas interests across the United States. As an
-  energy holding company, Alliance Holdings did not maintain a public developer
-  API program.
+  Alliance Holdings GP, L.P. (AHGP) was a limited partnership formed to own and
+  control Alliance Resource Management GP, LLC, the managing general partner of
+  Alliance Resource Partners, L.P. (ARLP), the second largest coal producer in the
+  eastern United States. AHGP held a general partner interest, incentive
+  distribution rights, and a direct stake in ARLP common units. In 2018 AHGP was
+  absorbed into ARLP in a simplification transaction and ceased to exist as a
+  separate public entity. ARLP (NASDAQ: ARLP) continues as a diversified energy
+  company earning income from coal production and from coal, oil and gas mineral
+  royalties. Alliance Holdings never maintained a public developer API program and
+  neither does the surviving entity. The legacy ahgp.com host no longer resolves and
+  alliancecoal.com redirects to www.arlp.com; probes on 2026-09-04 of arlp.com,
+  www.arlp.com and investor.arlp.com found no OpenAPI, GraphQL, AsyncAPI, gRPC,
+  WSDL, MCP, agent card, or served /.well-known/ document.
 apis: []
 common:
   - type: DomainSecurity
     url: security/alliance-holdings-domain-security.yml
+  - type: LLMsTxt
+    url: llms/alliance-holdings-llms.txt
   - type: Website
     url: https://www.arlp.com
   - type: InvestorRelations
     url: https://investor.arlp.com
+  - type: TermsOfService
+    url: https://www.arlp.com/terms-of-use/
+  - type: PrivacyPolicy
+    url: https://www.arlp.com/privacy-statement/
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
 tags:
   - Energy
   - Coal
@@ -62,3 +73,29 @@ tags_raw:
   - Natural Resources
   - Financial Services
   - Holding Company
+x-enrichment:
+  date: '2026-09-04'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    Alliance Holdings GP, L.P. was absorbed into Alliance Resource Partners in the 2018
+    simplification transaction and its own host ahgp.com no longer resolves (NXDOMAIN on the
+    apex, certificate-name mismatch on www), so the only surface left to probe is the
+    successor's twelve-page WordPress corporate site at www.arlp.com — which has no developer
+    section, returns 404 for /openapi.json, /swagger.json, /api-docs, /graphql, /llms.txt and
+    every /.well-known/ path, and whose full Yoast page sitemap lists no documentation,
+    reference or portal page at all.
+  evidence:
+    - url: https://www.arlp.com/openapi.json
+      status: 404
+    - url: https://www.arlp.com/.well-known/api-catalog
+      status: 404
+    - url: https://www.arlp.com/page-sitemap.xml
+      status: 200
+    - url: https://ahgp.com
+      status: 0
+  checked: '2026-09-04'
