@@ -1,0 +1,111 @@
+generated: '2026-09-04'
+method: probed
+source: >-
+  Live anonymous GET of the named /.well-known/ paths on every host this record knows —
+  the registrable domain arlp.com, www.arlp.com, and the investor-relations host
+  investor.arlp.com. Alliance Holdings GP, L.P. was absorbed into Alliance Resource
+  Partners, L.P. in 2018 and its own domains no longer resolve, so the successor's hosts
+  are the only surface left to probe.
+note: >-
+  RECORDED ABSENCE. No /.well-known/ document is served on any host. www.arlp.com and
+  arlp.com return 404 for every named path (a WordPress HTML 404 body, not a document).
+  investor.arlp.com answers HTTP 200 with an 11-byte text/html body reading "Invalid key"
+  for EVERY /.well-known/ path probed — an origin catch-all, not a published document —
+  so every one of those 200s is scored as a MISS. No WellKnown, SecurityTxt, APICatalog
+  or AgentCard pointer is emitted from this probe, because none of these documents exists.
+hosts:
+  - host: www.arlp.com
+    role: corporate website (successor company, Alliance Resource Partners, L.P.)
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+  - host: arlp.com
+    role: registrable domain (301s to www.arlp.com)
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+  - host: investor.arlp.com
+    role: investor relations host (third-party IR platform, Cloudflare-fronted)
+    note: >-
+      Every path below returned HTTP 200 with the 11-byte body "Invalid key". That is an
+      origin catch-all response, not a published document, so each is treated as a miss.
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        file: null
+        soft_200: true
+        body: Invalid key
+      - path: /.well-known/openid-configuration
+        status: 200
+        file: null
+        soft_200: true
+        body: Invalid key
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        file: null
+        soft_200: true
+        body: Invalid key
+      - path: /.well-known/api-catalog
+        status: 200
+        file: null
+        soft_200: true
+        body: Invalid key
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        file: null
+        soft_200: true
+        body: Invalid key
+      - path: /.well-known/agent-card.json
+        status: 200
+        file: null
+        soft_200: true
+        body: Invalid key
+      - path: /.well-known/agent.json
+        status: 200
+        file: null
+        soft_200: true
+        body: Invalid key
+summary:
+  hosts_probed: 3
+  paths_probed: 21
+  documents_found: 0
+  soft_200_catch_all: 7
+  pointer_emitted: false
