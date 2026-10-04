@@ -64,7 +64,7 @@ tags:
   - Coal
   - Mining
   - Natural Resources
-  - Financial-Services
+  - Financial Services
   - Holding Company
 tags_raw:
   - Energy
@@ -73,6 +73,7 @@ tags_raw:
   - Natural Resources
   - Financial Services
   - Holding Company
+  - Financial-Services
 x-enrichment:
   date: '2026-09-04'
   status: minimal
