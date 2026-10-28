@@ -64,13 +64,81 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Alliance Holdings GP, L.P. (AHGP) was a limited partnership formed to own and control Alliance Resource Management GP, LLC, the managing general partner of Alliance Resource Partners, L.P. (ARLP), the second largest coal producer in the eastern United States.
+Alliance Holdings GP, L.P. (AHGP) was a limited partnership formed to own and control Alliance Resource Management GP, LLC, the managing general partner of Alliance Resource Partners, L.P. (ARLP), the second largest coal producer in the eastern United States. AHGP held a general partner interest, incentive distribution rights, and a direct stake in ARLP common units. In 2018 AHGP was absorbed into ARLP in a simplification transaction and ceased to exist as a separate public entity. ARLP (NASDAQ: ARLP) continues as a diversified energy company earning income from coal production and from coal, oil and gas mineral royalties. Alliance Holdings never maintained a public developer API program and neither does the surviving entity. The legacy ahgp.com host no longer resolves and alliancecoal.com redirects to www.arlp.com; probes on 2026-09-04 of arlp.com, www.arlp.com and investor.arlp.com found no OpenAPI, GraphQL, AsyncAPI, gRPC, WSDL, MCP, agent card, or served /.well-known/ document.
 
-AHGP held a general partner interest and incentive distribution rights in ARLP, along with a substantial direct ownership stake in ARLP common units. In 2018, Alliance Holdings GP became a wholly-owned subsidiary of Alliance Resource Partners as part of a simplification transaction, with AHGP unitholders receiving ARLP common units in exchange.
+**Areas:** Energy · Coal · Mining · Natural Resources · Financial Services · Holding Company
 
-Alliance Resource Partners (NASDAQ: ARLP) continues as a diversified energy company generating income from coal production and mineral royalties from coal, oil, and gas interests across the United States.
+## Alliance Holdings on APIs.io
 
-## Links
+Everything profiled for Alliance Holdings is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/alliance-holdings/](https://apis.io/providers/alliance-holdings/)** — or go straight to one of the APIs or properties below.
 
-- [Alliance Resource Partners](https://www.arlp.com)
-- [Investor Relations](https://investor.arlp.com)
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Alliance Holdings Domain Security](https://apis.io/security/alliance-holdings/alliance-holdings-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.arlp.com)
+- [Terms of service](https://www.arlp.com/terms-of-use/)
+- [Privacy policy](https://www.arlp.com/privacy-statement/)
+
+## API Evangelist rating
+
+**Kin Score 6.2** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 10.5 |
+
+**Agent readiness 2.9** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 8.2** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/alliance-holdings/](https://apis.io/providers/alliance-holdings/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Alliance Holdings: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/alliance-holdings/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
